@@ -1,23 +1,24 @@
 $(document).ready(function(){
   console.log("jQuery is working");
-  $("#form").submit(function(event){
-    event.preventDefault()
-    console.log("yes");
+  $("#input-form").submit(function(event){
+    // console.log("here");
+    event.preventDefault();
+    // console.log("yes");
 
 
   });
+});
 
-  var beep = $("#inputNum").val();
-  console.log(beep);
-  var inputArray = [];
- $(inputArray).push(beep);
-  var ouputArray = [];
-  for (var i = 0; i < inputArray.length; i++) {
+var ouputArray = [];
+var beep = $("#input-num").val();
+  for (var i = 0; i < beep; i++) {
+    beep = [];
     console.log(beep);
-    var ouputArray = [];
-    $(beep).push(outputArray);
+    console.log(beep);
     console.log(outputArray);
-    console.log(inputArray);
+    console.log(beep);
 
   };
-});
+  // $(beep).push(outputArray);
+  // $("#output").push(outputArray);
+// });
