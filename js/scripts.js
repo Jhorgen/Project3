@@ -2,15 +2,22 @@ $(document).ready(function(){
   console.log("jQuery is working");
   $("#form").submit(function(event){
     event.preventDefault()
-    var beep = $("#input-num").val();
+    console.log("yes");
 
-    var ouputArray = [];
-    var inputArray = ['1', '2', '3', '4', '5'];
-    for (var inputArray = 0; i < inputArray.length; inputArray++) {
-      console.log(beep);
-      outputArray.push(beep);
-      console.log(outputArray);
-      console.log(inputArray);
-    };
+
   });
+
+  var beep = $("#inputNum").val();
+  console.log(beep);
+  var inputArray = [];
+ $(inputArray).push(beep);
+  var ouputArray = [];
+  for (var i = 0; i < inputArray.length; i++) {
+    console.log(beep);
+    var ouputArray = [];
+    $(beep).push(outputArray);
+    console.log(outputArray);
+    console.log(inputArray);
+
+  };
 });
