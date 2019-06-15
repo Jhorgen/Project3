@@ -10,7 +10,7 @@ $(document).ready(function(){
     var beep = ($("#input-num").val()).split("");
     outputArray.push(beep);
     console.log(beep);
-    for (var i=0; i < beep.length; i++) {
+    for (var i=0; i < outputArray.length; i++) {
       if (beep[i] === "1") {
           beep[i] = "Beep";
           console.log(outputArray);
