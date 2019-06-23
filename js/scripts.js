@@ -1,31 +1,42 @@
+var run = function(beep) {
+
+  var outputArray = [];
+
+  for (var i = 0; i <= beep; i++) {
+    var boop = i.toString();
+    outputArray.push(boop);
+    console.log(outputArray);
+    console.log(boop);
+
+    if (boop.includes('1')) {
+      outputArray.push("Beep");
+    } else if (boop.includes('2')) {
+      outputArray.push("Boop");
+    } else if (boop.includes('3')) {
+      outputArray.push("Sorry dave, I'm afraid I can't do that.");
+    } else if (boop.includes('13')) {
+      outputArray.push("I'm sorry, Dave. I'm afraid I can't do that.");
+    } else if (boop.includes('21')) {
+      outputArray.push("Boop");
+    } else if (boop.includes('32')) {
+      outputArray.push("I'm sorry, Dave. I'm afraid I can't do that.");
+    };
+  };
+  return(outputArray);
+};
+
 $(document).ready(function(){
   console.log("jQuery is working");
   $("#input-form").submit(function(event){
-    // console.log("here");
     event.preventDefault();
-    // console.log("yes");
+
+    var beep = $('#input-num').val();
+    var output = run(beep);
+
+    output.forEach(function(beep2) {
+      $("#output").append('<li>' + beep2 + '</li>');
+    });
 
 
-    var outputArray = [];
-    var beep = ($("#input-num").val()).split("");
-    outputArray.push(beep);
-    console.log(beep);
-    for (var i=0; i < outputArray.length; i++) {
-      if (beep[i] === "1") {
-          beep[i] = "Beep";
-          console.log(outputArray);
-        } else if (beep[i] === "2") {
-           beep[i] = "Boop";
-        } else if (beep[i] === "3") {
-          beep[i] = "Sorry dave, I'm afraid I can't do that.";
-        } else if (beep[i] === "13") {
-          beep[i] = "I'm sorry, Dave. I'm afraid I can't do that.";
-        } else if (beep[i] === "21") {
-          beep[i] = "Boop";
-        } else if (beep[i] === "32") {
-          beep[i] = "I'm sorry, Dave. I'm afraid I can't do that.";
-        }
-};
-$("#output").text(outputArray);
-});
+  });
 });
