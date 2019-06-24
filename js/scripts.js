@@ -22,7 +22,6 @@ for (var i = 0; i <= beep; i++) {
 };
 
 // User interface
-
 $(document).ready(function(){
   console.log("jQuery is working");
   $("#input-form").submit(function(event){
