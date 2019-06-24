@@ -4,6 +4,13 @@
 
 ##### By _Josh Horgen, 2019_
 
+## _Setup/Installation Requirements_
+#### _Step 1: Visit https://github.com/Jhorgen/Independent-project-2
+#### _Step 2: Click the green "Clone or Download" button and copy the link.
+#### _Step 3: Open Git Bash and use the command: "git clone _____URL_____"_
+
+### _Alternatively, visit https://jhorgen.github.io/Project3/ for a preview of my project._
+
 ## Description
 _This webpage will convert any number into robot language. This page will demonstrate how Javascript and jQuery can be used to manipulate user input._
 
