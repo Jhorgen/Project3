@@ -2,8 +2,7 @@
 var run = function(beep) {
 var outputArray = [];
 
-
-  for (var i = 0; i <= beep; i++) {
+for (var i = 0; i <= beep; i++) {
     var boop = i.toString();
 
     console.log(outputArray);
