@@ -1,11 +1,19 @@
 # _Beep Boop_
 
-#### _Convert numbers into robot language_
+### _Convert numbers into robot language!_
 
-#### By _Josh Horgen, 2019_
+###### By _Josh Horgen, 2019_
+
+## _Setup/Installation Requirements_
+#### _Step 1: Visit https://github.com/Jhorgen/project3_
+#### _Step 2: Click the green "Clone or Download" button and copy the link._
+#### _Step 3: Open Git Bash and use the command: "git clone _____URL_____"_
+
+#### _Alternatively, visit https://jhorgen.github.io/Project3 for a preview of my project._
+
 
 ## Description
-_This webpage will convert any number into robot language._
+_This webpage will convert any number into robot language. This page will demonstrate how Javascript and jQuery can be used to manipulate user input._
 
 ## Specs
 
@@ -18,21 +26,12 @@ _This webpage will convert any number into robot language._
 | Upon submit, the program will return a phrase for an input of "13" | 13 | "I'm sorry, Dave. I'm afraid I can't do that." |
 | Upon submit, the program will return "boop" for an input of "21" | 21 | "boop" |
 | Upon submit, the program will return a phrase for an input of "32" | 32 | "I'm sorry, Dave. I'm afraid I can't do that." |
-| Upon submit, the program will combine previous behaviors into single output | 100 | 0
-Beep
-Boop
-Sorry dave, I'm afraid I can't do that.
-4
-5
-6
-7
-8
-9
-Beep
-Beep
-Boop
-I'm sorry, Dave. I'm afraid I can't do that. |
+| Upon submit, the program will combine and list all behaviors into single output | 100 | 0 Beep Boop Sorry dave, I'm afraid I can't do that. 4 5 6 7 8 9 Beep Beep Boop I'm sorry, Dave. I'm afraid I can't do that. |
 
+### Languages used
+* HTML
+* Javascript
+* jQuery
 
 #### License
 
