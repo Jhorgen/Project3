@@ -4,10 +4,6 @@ var outputArray = [];
 
 for (var i = 0; i <= beep; i++) {
     var boop = i.toString();
-
-    console.log(outputArray);
-    console.log(boop);
-
    if (boop.includes('32')) {
     outputArray.push("I'm sorry, Dave. I'm afraid I can't do that.");
   } else if (boop.includes('21')) {
