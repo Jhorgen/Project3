@@ -1,29 +1,33 @@
+ // Business
 var run = function(beep) {
+var outputArray = [];
 
-  var outputArray = [];
 
   for (var i = 0; i <= beep; i++) {
     var boop = i.toString();
-    outputArray.push(boop);
+
     console.log(outputArray);
     console.log(boop);
 
-    if (boop.includes('1')) {
+   if (boop.includes('32')) {
+    outputArray.push("I'm sorry, Dave. I'm afraid I can't do that.");
+  } else if (boop.includes('21')) {
+    outputArray.push("Boop");
+  } else if (boop.includes('13')) {
+    outputArray.push("I'm sorry, Dave. I'm afraid I can't do that.");
+  } else if (boop.includes('3')) {
+    outputArray.push("Sorry dave, I'm afraid I can't do that.");
+  } else if (boop.includes('2')) {
+    outputArray.push("Boop");
+  }else if (boop.includes('1')) {
       outputArray.push("Beep");
-    } else if (boop.includes('2')) {
-      outputArray.push("Boop");
-    } else if (boop.includes('3')) {
-      outputArray.push("Sorry dave, I'm afraid I can't do that.");
-    } else if (boop.includes('13')) {
-      outputArray.push("I'm sorry, Dave. I'm afraid I can't do that.");
-    } else if (boop.includes('21')) {
-      outputArray.push("Boop");
-    } else if (boop.includes('32')) {
-      outputArray.push("I'm sorry, Dave. I'm afraid I can't do that.");
+  } else { outputArray.push(i);
     };
   };
-  return(outputArray);
+  return outputArray;
 };
+
+// User interface
 
 $(document).ready(function(){
   console.log("jQuery is working");
@@ -32,11 +36,12 @@ $(document).ready(function(){
 
     var beep = $('#input-num').val();
     var output = run(beep);
+    var newArray = [];
 
-    output.forEach(function(beep2) {
-      $("#output").append('<li>' + beep2 + '</li>');
+    output.forEach(function(output) {
+      newArray.push('<li>' + output + '</li>');
     });
-
-
+    $('#output').append(newArray.join(''));
   });
+
 });
