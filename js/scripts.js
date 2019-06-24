@@ -1,7 +1,6 @@
  // Business
 var run = function(beep) {
 var outputArray = [];
-
 for (var i = 0; i <= beep; i++) {
     var boop = i.toString();
    if (boop.includes('32')) {
