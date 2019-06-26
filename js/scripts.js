@@ -1,5 +1,5 @@
  // Business
-var run = function(beep) {
+function run(beep) {
 var outputArray = [];
 for (var i = 0; i <= beep; i++) {
     var boop = i.toString();
@@ -34,7 +34,7 @@ $(document).ready(function(){
     output.forEach(function(output) {
       newArray.push('<li>' + output + '</li>');
     });
-    $('#output').append(newArray.join(''));
+    $('#output').html(newArray.join(''));
   });
 
 });
