@@ -1,21 +1,21 @@
- // Business
+// Business
 function run(beep) {
-var outputArray = [];
-for (var i = 0; i <= beep; i++) {
+  var outputArray = [];
+  for (var i = 0; i <= beep; i++) {
     var boop = i.toString();
-   if (boop.includes('32')) {
-    outputArray.push("I'm sorry, Dave. I'm afraid I can't do that.");
-  } else if (boop.includes('21')) {
-    outputArray.push("Boop");
-  } else if (boop.includes('13')) {
-    outputArray.push("I'm sorry, Dave. I'm afraid I can't do that.");
-  } else if (boop.includes('3')) {
-    outputArray.push("Sorry dave, I'm afraid I can't do that.");
-  } else if (boop.includes('2')) {
-    outputArray.push("Boop");
-  }else if (boop.includes('1')) {
+    if (boop.includes('32')) {
+      outputArray.push("I'm sorry, Dave. I'm afraid I can't do that.");
+    } else if (boop.includes('21')) {
+      outputArray.push("Boop");
+    } else if (boop.includes('13')) {
+      outputArray.push("I'm sorry, Dave. I'm afraid I can't do that.");
+    } else if (boop.includes('3')) {
+      outputArray.push("Sorry dave, I'm afraid I can't do that.");
+    } else if (boop.includes('2')) {
+      outputArray.push("Boop");
+    }else if (boop.includes('1')) {
       outputArray.push("Beep");
-  } else { outputArray.push(i);
+    } else { outputArray.push(i);
     };
   };
   return outputArray;
