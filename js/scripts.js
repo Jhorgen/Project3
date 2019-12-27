@@ -35,11 +35,14 @@ $(document).ready(function(){
       newArray.push(robo.length > 3 ? '<li class="text-info">' + robo + '</li>' : '<li class="text-black">' + robo + '</li>');
     });
 
+    setTimeout(function(){
     if(beep.length === 0 ) {
       $('#output').html('<h3 class="text-primary mt-2">' + 'Please enter a number and try again!' + '</h3>')
     } else {
      $('#output').html(newArray.join(' '));
    }
+ }, 50);
+
   });
 
 });
