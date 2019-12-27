@@ -41,7 +41,7 @@ $(document).ready(function(){
     } else {
      $('#output').html(newArray.join(' '));
    }
- }, 50);
+ }, 100);
 
   });
 
