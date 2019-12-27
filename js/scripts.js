@@ -31,10 +31,15 @@ $(document).ready(function(){
     var output = run(beep);
     var newArray = [];
 
-    output.forEach(function(output) {
-      newArray.push('<li>' + output + '</li>');
+    output.forEach(function(robo) {
+      newArray.push(robo.length > 3 ? '<li class="text-info">' + robo + '</li>' : '<li class="text-black">' + robo + '</li>');
     });
-    $('#output').html(newArray.join(''));
+
+    if(beep.length === 0 ) {
+      $('#output').html('<h3 class="text-primary mt-2">' + 'Please enter a number and try again!' + '</h3>')
+    } else {
+     $('#output').html(newArray.join(' '));
+   }
   });
 
 });
